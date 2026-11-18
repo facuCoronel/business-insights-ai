@@ -9,7 +9,7 @@ from src.infrastructure.capabilities.capability_gateway import FastFixProCapabil
 
 logger = logging.getLogger(__name__)
 
-mcp = FastMCP("main-server-fastfixpro")
+mcp = FastMCP("business-insights-ai")
 
 # Shared gateway: same catalog + execution rules as the in-process /business-chat pipeline.
 _gateway = FastFixProCapabilityGateway()

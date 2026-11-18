@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 @contextlib.asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     settings = get_settings()
-    logger.info("Starting main-server-py")
+    logger.info("Starting business-insights-ai")
     logger.info("PostgreSQL: %s:%s/%s", settings.postgres.host, settings.postgres.port, settings.postgres.database)
 
     pg_conn.get_engine()
@@ -33,7 +33,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="main-server-py",
+        title="Business Insights AI",
         version="0.1.0",
         lifespan=lifespan,
     )

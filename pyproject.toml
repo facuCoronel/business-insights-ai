@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "main-server-py"
+name = "business-insights-ai"
 version = "0.1.0"
-description = "Main server — Python migration with Clean Architecture + Agent Framework"
+description = "AI backend for business reports, marketing plans and declarative dashboards"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115.0",
